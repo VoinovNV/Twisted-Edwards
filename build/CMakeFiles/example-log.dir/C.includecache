@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/Projects/Twisted_Edwards/libakrypt-0.x/examples/example-log.c
+stdio.h
+-
+libakrypt.h
+-
+
+/home/user/Projects/Twisted_Edwards/libakrypt-0.x/source/libakrypt.h
+sys/types.h
+-
+endian.h
+-
+byteswap.h
+-
+io.h
+-
+conio.h
+-
+process.h
+-
+

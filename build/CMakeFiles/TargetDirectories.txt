@@ -1,0 +1,13 @@
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/install/strip.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/install/local.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/list_install_components.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/edit_cache.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/dist.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/install.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/uninstall.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/example-hello.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/example-mac.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/example-buffer.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/akrypt-static.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/rebuild_cache.dir
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/example-log.dir

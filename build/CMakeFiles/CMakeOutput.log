@@ -1,0 +1,853 @@
+The system is: Linux - 5.3.11-zen+ - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: -march=native
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/user/Projects/Twisted_Edwards/build/CMakeFiles/3.16.0-rc3/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2b710/fast && /usr/bin/gmake -f CMakeFiles/cmTC_2b710.dir/build.make CMakeFiles/cmTC_2b710.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b710.dir/testCCompiler.c.o
+/usr/bin/cc   -march=native    -o CMakeFiles/cmTC_2b710.dir/testCCompiler.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_2b710
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b710.dir/link.txt --verbose=1
+/usr/bin/cc -march=native     -rdynamic CMakeFiles/cmTC_2b710.dir/testCCompiler.c.o  -o cmTC_2b710 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_84fd9/fast && /usr/bin/gmake -f CMakeFiles/cmTC_84fd9.dir/build.make CMakeFiles/cmTC_84fd9.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -march=native    -v -o CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: x86_64-pc-linux-gnu
+Configured with: /var/tmp/portage/sys-devel/gcc-9.2.0-r2/work/gcc-9.2.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/9.2.0 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include/g++-v9 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 9.2.0-r2 p3' --disable-esp --enable-libstdcxx-time --with-build-config=bootstrap-lto --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-altivec --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libmudflap --disable-libssp --disable-systemtap --enable-vtable-verify --enable-lto --with-isl --disable-isl-version-check --enable-default-pie --enable-default-ssp
+Thread model: posix
+gcc version 9.2.0 (Gentoo 9.2.0-r2 p3) 
+COLLECT_GCC_OPTIONS='-march=native' '-v' '-o' 'CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o' '-c'
+ /usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -march=skylake -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mrdseed -mprfchw -madx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mclflushopt -mxsavec -mxsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=4096 -mtune=skylake -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccqpdrhH.s
+GNU C17 (Gentoo 9.2.0-r2 p3) version 9.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.2.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (Gentoo 9.2.0-r2 p3) version 9.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.2.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: ba965b3f635f8ef4f747904eb4f4583c
+COLLECT_GCC_OPTIONS='-march=native' '-v' '-o' 'CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o' '-c'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o /tmp/ccqpdrhH.s
+GNU assembler version 2.33.1 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.33.1 p1) 2.33.1
+COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=native' '-v' '-o' 'CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o' '-c'
+Linking C executable cmTC_84fd9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84fd9.dir/link.txt --verbose=1
+/usr/bin/cc -march=native    -v -rdynamic CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o  -o cmTC_84fd9 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /var/tmp/portage/sys-devel/gcc-9.2.0-r2/work/gcc-9.2.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/9.2.0 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include/g++-v9 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/python --enable-languages=c,c++,fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 9.2.0-r2 p3' --disable-esp --enable-libstdcxx-time --with-build-config=bootstrap-lto --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --disable-altivec --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libmudflap --disable-libssp --disable-systemtap --enable-vtable-verify --enable-lto --with-isl --disable-isl-version-check --enable-default-pie --enable-default-ssp
+Thread model: posix
+gcc version 9.2.0 (Gentoo 9.2.0-r2 p3) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=native' '-v' '-rdynamic' '-o' 'cmTC_84fd9'
+ /usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc01Th34.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_84fd9 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=native' '-v' '-rdynamic' '-o' 'cmTC_84fd9'
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include]
+    add: [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include]
+  collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include;/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_84fd9/fast && /usr/bin/gmake -f CMakeFiles/cmTC_84fd9.dir/build.make CMakeFiles/cmTC_84fd9.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -march=native    -v -o CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-9.2.0-r2/work/gcc-9.2.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/9.2.0 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include/g++-v9 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 9.2.0-r2 p3' --disable-esp --enable-libstdcxx-time --with-build-config=bootstrap-lto --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-altivec --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libmudflap --disable-libssp --disable-systemtap --enable-vtable-verify --enable-lto --with-isl --disable-isl-version-check --enable-default-pie --enable-default-ssp]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.0 (Gentoo 9.2.0-r2 p3) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=native' '-v' '-o' 'CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -march=skylake -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mrdseed -mprfchw -madx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mclflushopt -mxsavec -mxsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=4096 -mtune=skylake -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccqpdrhH.s]
+  ignore line: [GNU C17 (Gentoo 9.2.0-r2 p3) version 9.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include]
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Gentoo 9.2.0-r2 p3) version 9.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.2.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: ba965b3f635f8ef4f747904eb4f4583c]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=native' '-v' '-o' 'CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o /tmp/ccqpdrhH.s]
+  ignore line: [GNU assembler version 2.33.1 (x86_64-pc-linux-gnu) using BFD version (Gentoo 2.33.1 p1) 2.33.1]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=native' '-v' '-o' 'CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [Linking C executable cmTC_84fd9]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84fd9.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc -march=native    -v -rdynamic CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o  -o cmTC_84fd9 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /var/tmp/portage/sys-devel/gcc-9.2.0-r2/work/gcc-9.2.0/configure --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/9.2.0 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include/g++-v9 --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/9.2.0/python --enable-languages=c c++ fortran --enable-obsolete --enable-secureplt --disable-werror --with-system-zlib --enable-nls --without-included-gettext --enable-checking=release --with-bugurl=https://bugs.gentoo.org/ --with-pkgversion='Gentoo 9.2.0-r2 p3' --disable-esp --enable-libstdcxx-time --with-build-config=bootstrap-lto --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-multilib --with-multilib-list=m32 m64 --disable-altivec --disable-fixed-point --enable-targets=all --enable-libgomp --disable-libmudflap --disable-libssp --disable-systemtap --enable-vtable-verify --enable-lto --with-isl --disable-isl-version-check --enable-default-pie --enable-default-ssp]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.0 (Gentoo 9.2.0-r2 p3) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=native' '-v' '-rdynamic' '-o' 'cmTC_84fd9']
+  link line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc01Th34.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_84fd9 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc01Th34.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_84fd9] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../..]
+    arg [CMakeFiles/cmTC_84fd9.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib] ==> [/usr/x86_64-pc-linux-gnu/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0;/usr/lib64;/lib64;/usr/x86_64-pc-linux-gnu/lib;/usr/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_WALL succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_fd105/fast && /usr/bin/gmake -f CMakeFiles/cmTC_fd105.dir/build.make CMakeFiles/cmTC_fd105.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd105.dir/src.c.o
+/usr/bin/cc   -march=native -DLIBAKRYPT_HAVE_WALL   -Wall -o CMakeFiles/cmTC_fd105.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fd105
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd105.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -DLIBAKRYPT_HAVE_WALL    -rdynamic CMakeFiles/cmTC_fd105.dir/src.c.o  -o cmTC_fd105 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_PEDANTIC_ERRORS succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f7061/fast && /usr/bin/gmake -f CMakeFiles/cmTC_f7061.dir/build.make CMakeFiles/cmTC_f7061.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7061.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -DLIBAKRYPT_HAVE_PEDANTIC_ERRORS   -pedantic-errors -o CMakeFiles/cmTC_f7061.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f7061
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7061.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -DLIBAKRYPT_HAVE_PEDANTIC_ERRORS    -rdynamic CMakeFiles/cmTC_f7061.dir/src.c.o  -o cmTC_f7061 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_O3 succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d7a47/fast && /usr/bin/gmake -f CMakeFiles/cmTC_d7a47.dir/build.make CMakeFiles/cmTC_d7a47.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7a47.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -DLIBAKRYPT_HAVE_O3   -O3 -o CMakeFiles/cmTC_d7a47.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d7a47
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7a47.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -DLIBAKRYPT_HAVE_O3    -rdynamic CMakeFiles/cmTC_d7a47.dir/src.c.o  -o cmTC_d7a47 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_FUNROLL_LOOPS succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9d76b/fast && /usr/bin/gmake -f CMakeFiles/cmTC_9d76b.dir/build.make CMakeFiles/cmTC_9d76b.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d76b.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -DLIBAKRYPT_HAVE_FUNROLL_LOOPS   -funroll-loops -o CMakeFiles/cmTC_9d76b.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9d76b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d76b.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -DLIBAKRYPT_HAVE_FUNROLL_LOOPS    -rdynamic CMakeFiles/cmTC_9d76b.dir/src.c.o  -o cmTC_9d76b 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_MARCH_NATIVE succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_05ad4/fast && /usr/bin/gmake -f CMakeFiles/cmTC_05ad4.dir/build.make CMakeFiles/cmTC_05ad4.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_05ad4.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -DLIBAKRYPT_HAVE_MARCH_NATIVE   -march=native -o CMakeFiles/cmTC_05ad4.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_05ad4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05ad4.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -DLIBAKRYPT_HAVE_MARCH_NATIVE    -rdynamic CMakeFiles/cmTC_05ad4.dir/src.c.o  -o cmTC_05ad4 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_STD_C99 succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_dcc50/fast && /usr/bin/gmake -f CMakeFiles/cmTC_dcc50.dir/build.make CMakeFiles/cmTC_dcc50.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dcc50.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -DLIBAKRYPT_HAVE_STD_C99   -std=c99 -o CMakeFiles/cmTC_dcc50.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_dcc50
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcc50.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -DLIBAKRYPT_HAVE_STD_C99    -rdynamic CMakeFiles/cmTC_dcc50.dir/src.c.o  -o cmTC_dcc50 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_PIPE succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b5cec/fast && /usr/bin/gmake -f CMakeFiles/cmTC_b5cec.dir/build.make CMakeFiles/cmTC_b5cec.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5cec.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -DLIBAKRYPT_HAVE_PIPE   -pipe -o CMakeFiles/cmTC_b5cec.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b5cec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5cec.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -DLIBAKRYPT_HAVE_PIPE    -rdynamic CMakeFiles/cmTC_b5cec.dir/src.c.o  -o cmTC_b5cec 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_STDIO succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_a7f23/fast && /usr/bin/gmake -f CMakeFiles/cmTC_a7f23.dir/build.make CMakeFiles/cmTC_a7f23.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7f23.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO   -o CMakeFiles/cmTC_a7f23.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a7f23
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7f23.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO    -rdynamic CMakeFiles/cmTC_a7f23.dir/src.c.o  -o cmTC_a7f23 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <stdio.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_STDLIB succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7e4a8/fast && /usr/bin/gmake -f CMakeFiles/cmTC_7e4a8.dir/build.make CMakeFiles/cmTC_7e4a8.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e4a8.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB   -o CMakeFiles/cmTC_7e4a8.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7e4a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e4a8.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB    -rdynamic CMakeFiles/cmTC_7e4a8.dir/src.c.o  -o cmTC_7e4a8 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <stdlib.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_STRING succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_aad8b/fast && /usr/bin/gmake -f CMakeFiles/cmTC_aad8b.dir/build.make CMakeFiles/cmTC_aad8b.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aad8b.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING   -o CMakeFiles/cmTC_aad8b.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_aad8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aad8b.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING    -rdynamic CMakeFiles/cmTC_aad8b.dir/src.c.o  -o cmTC_aad8b 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <string.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_CTYPE succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_11ff5/fast && /usr/bin/gmake -f CMakeFiles/cmTC_11ff5.dir/build.make CMakeFiles/cmTC_11ff5.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11ff5.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE   -o CMakeFiles/cmTC_11ff5.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_11ff5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11ff5.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE    -rdynamic CMakeFiles/cmTC_11ff5.dir/src.c.o  -o cmTC_11ff5 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <ctype.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_ENDIAN succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c650a/fast && /usr/bin/gmake -f CMakeFiles/cmTC_c650a.dir/build.make CMakeFiles/cmTC_c650a.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c650a.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN   -o CMakeFiles/cmTC_c650a.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c650a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c650a.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN    -rdynamic CMakeFiles/cmTC_c650a.dir/src.c.o  -o cmTC_c650a 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <endian.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_TIME succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_afdb2/fast && /usr/bin/gmake -f CMakeFiles/cmTC_afdb2.dir/build.make CMakeFiles/cmTC_afdb2.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_afdb2.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME   -o CMakeFiles/cmTC_afdb2.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_afdb2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afdb2.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME    -rdynamic CMakeFiles/cmTC_afdb2.dir/src.c.o  -o cmTC_afdb2 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <time.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SYSLOG succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_df3db/fast && /usr/bin/gmake -f CMakeFiles/cmTC_df3db.dir/build.make CMakeFiles/cmTC_df3db.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_df3db.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG   -o CMakeFiles/cmTC_df3db.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_df3db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df3db.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG    -rdynamic CMakeFiles/cmTC_df3db.dir/src.c.o  -o cmTC_df3db 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <syslog.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_UNISTD succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_4e334/fast && /usr/bin/gmake -f CMakeFiles/cmTC_4e334.dir/build.make CMakeFiles/cmTC_4e334.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e334.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD   -o CMakeFiles/cmTC_4e334.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4e334
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e334.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD    -rdynamic CMakeFiles/cmTC_4e334.dir/src.c.o  -o cmTC_4e334 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <unistd.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_FCNTL succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_22857/fast && /usr/bin/gmake -f CMakeFiles/cmTC_22857.dir/build.make CMakeFiles/cmTC_22857.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22857.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL   -o CMakeFiles/cmTC_22857.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_22857
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22857.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL    -rdynamic CMakeFiles/cmTC_22857.dir/src.c.o  -o cmTC_22857 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <fcntl.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_LIMITS succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_eb315/fast && /usr/bin/gmake -f CMakeFiles/cmTC_eb315.dir/build.make CMakeFiles/cmTC_eb315.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb315.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS   -o CMakeFiles/cmTC_eb315.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_eb315
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb315.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS    -rdynamic CMakeFiles/cmTC_eb315.dir/src.c.o  -o cmTC_eb315 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <limits.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SYSMMAN succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e1085/fast && /usr/bin/gmake -f CMakeFiles/cmTC_e1085.dir/build.make CMakeFiles/cmTC_e1085.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1085.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN   -o CMakeFiles/cmTC_e1085.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e1085
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1085.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN    -rdynamic CMakeFiles/cmTC_e1085.dir/src.c.o  -o cmTC_e1085 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <sys/mman.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SYSSTAT succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_4b4dd/fast && /usr/bin/gmake -f CMakeFiles/cmTC_4b4dd.dir/build.make CMakeFiles/cmTC_4b4dd.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b4dd.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT   -o CMakeFiles/cmTC_4b4dd.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4b4dd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b4dd.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT    -rdynamic CMakeFiles/cmTC_4b4dd.dir/src.c.o  -o cmTC_4b4dd 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <sys/stat.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SYSTYPES succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_541f8/fast && /usr/bin/gmake -f CMakeFiles/cmTC_541f8.dir/build.make CMakeFiles/cmTC_541f8.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_541f8.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES   -o CMakeFiles/cmTC_541f8.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_541f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_541f8.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES    -rdynamic CMakeFiles/cmTC_541f8.dir/src.c.o  -o cmTC_541f8 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <sys/types.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SYSSOCKET succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ca103/fast && /usr/bin/gmake -f CMakeFiles/cmTC_ca103.dir/build.make CMakeFiles/cmTC_ca103.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca103.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET   -o CMakeFiles/cmTC_ca103.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ca103
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca103.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET    -rdynamic CMakeFiles/cmTC_ca103.dir/src.c.o  -o cmTC_ca103 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <sys/socket.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SYSUN succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1cb74/fast && /usr/bin/gmake -f CMakeFiles/cmTC_1cb74.dir/build.make CMakeFiles/cmTC_1cb74.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1cb74.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN   -o CMakeFiles/cmTC_1cb74.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c:5:29: warning: unused variable ‘sock’ [-Wunused-variable]
+    5 |          struct sockaddr_un sock;
+      |                             ^~~~
+Linking C executable cmTC_1cb74
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cb74.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN    -rdynamic CMakeFiles/cmTC_1cb74.dir/src.c.o  -o cmTC_1cb74 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+      #include <sys/un.h>
+      #include <sys/socket.h>
+      int main( void ) {
+         struct sockaddr_un sock;
+        return 0;
+      }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SYSSELECT succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c26d0/fast && /usr/bin/gmake -f CMakeFiles/cmTC_c26d0.dir/build.make CMakeFiles/cmTC_c26d0.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c26d0.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT   -o CMakeFiles/cmTC_c26d0.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c26d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c26d0.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT    -rdynamic CMakeFiles/cmTC_c26d0.dir/src.c.o  -o cmTC_c26d0 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <sys/select.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_ERRNO succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_80db0/fast && /usr/bin/gmake -f CMakeFiles/cmTC_80db0.dir/build.make CMakeFiles/cmTC_80db0.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80db0.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO   -o CMakeFiles/cmTC_80db0.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_80db0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80db0.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO    -rdynamic CMakeFiles/cmTC_80db0.dir/src.c.o  -o cmTC_80db0 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <errno.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_TERMIOS succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_707dd/fast && /usr/bin/gmake -f CMakeFiles/cmTC_707dd.dir/build.make CMakeFiles/cmTC_707dd.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_707dd.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS   -o CMakeFiles/cmTC_707dd.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_707dd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_707dd.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS    -rdynamic CMakeFiles/cmTC_707dd.dir/src.c.o  -o cmTC_707dd 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <termios.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_DIRENT succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_0ea1e/fast && /usr/bin/gmake -f CMakeFiles/cmTC_0ea1e.dir/build.make CMakeFiles/cmTC_0ea1e.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ea1e.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT   -o CMakeFiles/cmTC_0ea1e.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c:4:20: warning: variable ‘st’ set but not used [-Wunused-but-set-variable]
+    4 |      struct dirent st;
+      |                    ^~
+Linking C executable cmTC_0ea1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ea1e.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT    -rdynamic CMakeFiles/cmTC_0ea1e.dir/src.c.o  -o cmTC_0ea1e 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <dirent.h>
+  int main( void ) {
+     struct dirent st;
+     st.d_type = 4;
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_FNMATCH succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_463b2/fast && /usr/bin/gmake -f CMakeFiles/cmTC_463b2.dir/build.make CMakeFiles/cmTC_463b2.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_463b2.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH   -o CMakeFiles/cmTC_463b2.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_463b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_463b2.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH    -rdynamic CMakeFiles/cmTC_463b2.dir/src.c.o  -o cmTC_463b2 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <fnmatch.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_STDALIGN succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ba3e2/fast && /usr/bin/gmake -f CMakeFiles/cmTC_ba3e2.dir/build.make CMakeFiles/cmTC_ba3e2.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba3e2.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN   -o CMakeFiles/cmTC_ba3e2.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ba3e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba3e2.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN    -rdynamic CMakeFiles/cmTC_ba3e2.dir/src.c.o  -o cmTC_ba3e2 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <stdalign.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_STDARG succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_844fa/fast && /usr/bin/gmake -f CMakeFiles/cmTC_844fa.dir/build.make CMakeFiles/cmTC_844fa.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_844fa.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG   -o CMakeFiles/cmTC_844fa.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_844fa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_844fa.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG    -rdynamic CMakeFiles/cmTC_844fa.dir/src.c.o  -o cmTC_844fa 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <stdarg.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_GETOPT succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7a337/fast && /usr/bin/gmake -f CMakeFiles/cmTC_7a337.dir/build.make CMakeFiles/cmTC_7a337.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a337.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_GETOPT   -o CMakeFiles/cmTC_7a337.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7a337
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a337.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_GETOPT    -rdynamic CMakeFiles/cmTC_7a337.dir/src.c.o  -o cmTC_7a337 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <getopt.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_LOCALE succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c5bea/fast && /usr/bin/gmake -f CMakeFiles/cmTC_c5bea.dir/build.make CMakeFiles/cmTC_c5bea.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5bea.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE   -o CMakeFiles/cmTC_c5bea.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c5bea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5bea.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE    -rdynamic CMakeFiles/cmTC_c5bea.dir/src.c.o  -o cmTC_c5bea 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <locale.h>
+  int main( void ) {
+     setlocale( LC_ALL, "" );
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_SIGNAL succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f18f6/fast && /usr/bin/gmake -f CMakeFiles/cmTC_f18f6.dir/build.make CMakeFiles/cmTC_f18f6.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f18f6.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE_H -DLIBAKRYPT_HAVE_SIGNAL   -o CMakeFiles/cmTC_f18f6.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f18f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f18f6.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE_H -DLIBAKRYPT_HAVE_SIGNAL    -rdynamic CMakeFiles/cmTC_f18f6.dir/src.c.o  -o cmTC_f18f6 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <signal.h>
+  int main( void ) {
+     return 0;
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_BUILTIN_MULQ_GCC succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f2707/fast && /usr/bin/gmake -f CMakeFiles/cmTC_f2707.dir/build.make CMakeFiles/cmTC_f2707.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2707.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE_H -DLIBAKRYPT_HAVE_SIGNAL_H -DLIBAKRYPT_HAVE_PTHREAD -DLIBAKRYPT_HAVE_BUILTIN_MULQ_GCC   -o CMakeFiles/cmTC_f2707.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f2707
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2707.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE_H -DLIBAKRYPT_HAVE_SIGNAL_H -DLIBAKRYPT_HAVE_PTHREAD -DLIBAKRYPT_HAVE_BUILTIN_MULQ_GCC    -rdynamic CMakeFiles/cmTC_f2707.dir/src.c.o  -o cmTC_f2707 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <sys/types.h>
+  int main( void ) {
+    #if defined( __x86_64__ )
+      u_int64_t w1, w0, u = 1, v = 2;
+      __asm__ ("mulq %3" : "=a,a" (w0), "=d,d" (w1) : "%0,0" (u), "r,m" (v));
+      return 0;
+    #else
+      #error Unsupported architecture
+    #endif
+  }
+Performing C SOURCE FILE Test LIBAKRYPT_HAVE_BUILTIN_CLMULEPI64 succeeded with the following output:
+Change Dir: /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2f62a/fast && /usr/bin/gmake -f CMakeFiles/cmTC_2f62a.dir/build.make CMakeFiles/cmTC_2f62a.dir/build
+gmake[1]: Entering directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f62a.dir/src.c.o
+/usr/bin/cc   -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE_H -DLIBAKRYPT_HAVE_SIGNAL_H -DLIBAKRYPT_HAVE_PTHREAD -DLIBAKRYPT_HAVE_BUILTIN_MULQ_GCC -DLIBAKRYPT_HAVE_BUILTIN_CLMULEPI64   -o CMakeFiles/cmTC_2f62a.dir/src.c.o   -c /home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c:5:18: warning: variable ‘c’ set but not used [-Wunused-but-set-variable]
+    5 |    __m128i a, b, c;
+      |                  ^
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c:6:8: warning: ‘a’ is used uninitialized in this function [-Wuninitialized]
+    6 |    c = _mm_clmulepi64_si128( a, b, 0x00 );
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp/src.c:6:8: warning: ‘b’ is used uninitialized in this function [-Wuninitialized]
+Linking C executable cmTC_2f62a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f62a.dir/link.txt --verbose=1
+/usr/bin/cc -march=native -Wall -pedantic-errors -O3 -funroll-loops -march=native -std=c99 -pipe -DLIBAKRYPT_HAVE_STDIO_H -DLIBAKRYPT_HAVE_STDLIB_H -DLIBAKRYPT_HAVE_STRING_H -DLIBAKRYPT_HAVE_CTYPE_H -DLIBAKRYPT_HAVE_ENDIAN_H -DLIBAKRYPT_HAVE_TIME_H -DLIBAKRYPT_HAVE_SYSLOG_H -DLIBAKRYPT_HAVE_UNISTD_H -DLIBAKRYPT_HAVE_FCNTL_H -DLIBAKRYPT_HAVE_LIMITS_H -DLIBAKRYPT_HAVE_SYSMMAN_H -DLIBAKRYPT_HAVE_SYSSTAT_H -DLIBAKRYPT_HAVE_SYSTYPES_H -DLIBAKRYPT_HAVE_SYSSOCKET_H -DLIBAKRYPT_HAVE_SYSUN_H -DLIBAKRYPT_HAVE_SYSSELECT_H -DLIBAKRYPT_HAVE_ERRNO_H -DLIBAKRYPT_HAVE_TERMIOS_H -DLIBAKRYPT_HAVE_DIRENT_H -DLIBAKRYPT_HAVE_FNMATCH_H -DLIBAKRYPT_HAVE_STDALIGN_H -DLIBAKRYPT_HAVE_STDARG_H -DLIBAKRYPT_HAVE_LOCALE_H -DLIBAKRYPT_HAVE_SIGNAL_H -DLIBAKRYPT_HAVE_PTHREAD -DLIBAKRYPT_HAVE_BUILTIN_MULQ_GCC -DLIBAKRYPT_HAVE_BUILTIN_CLMULEPI64    -rdynamic CMakeFiles/cmTC_2f62a.dir/src.c.o  -o cmTC_2f62a 
+gmake[1]: Leaving directory '/home/user/Projects/Twisted_Edwards/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <wmmintrin.h>
+  int main( void ) {
+
+   __m128i a, b, c;
+   c = _mm_clmulepi64_si128( a, b, 0x00 );
+
+  return 0;
+ }

@@ -6,7 +6,7 @@
 #include <ak_sign.h>
 
 int main() {
-/*
+
 	printf("Test 1: ");
 	test_add();
 	printf("done\nTest 2: ");
@@ -20,7 +20,7 @@ int main() {
 	printf("done\n");
 	int start, end;
 	
-	for (int j = 1; j <= 150; j+=150) {
+	for (int j = 1; j <= 150; j+=50) {
 		printf("j=%d\n", j);
 		start = clock();
 		for (int i = 0; i < j; i++) {
@@ -36,10 +36,10 @@ int main() {
 		printf("Weierstrass: %lf\n", (float)(end - start) / (CLOCKS_PER_SEC));
 		
 	}
-    printf("OK!\n");*/
+    
     test_triple();
 
     test_quintuple();
-
+	printf("OK!\n");
 
 }

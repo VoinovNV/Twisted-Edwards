@@ -154,44 +154,31 @@ void ak_wpoint_to_epoint(ak_wpoint wp, ak_wcurve wc, ak_epoint ep, ak_ecurve ec)
 void ak_epoint_triple(ak_epoint ep, ak_ecurve ec){
     ak_mpznmax a,b,c,d,e,f,g;
     ak_mpzn_mul_montgomery(a, ep->Y, ep->Y, ec->p, ec->n, ec->size);
-
     ak_mpzn_mul_montgomery(b, ep->X, ep->X, ec->p, ec->n, ec->size);
     ak_mpzn_mul_montgomery(b, b, ec->e, ec->p, ec->n, ec->size);
-
     ak_mpzn_add_montgomery(c, a, b, ec->p, ec->size);
-
     ak_mpzn_mul_montgomery(d, ep->Z, ep->Z, ec->p, ec->n, ec->size);
     ak_mpzn_lshift_montgomery(d,d,ec->p, ec->size);
     ak_mpzn_sub(e,ec->p,c,ec->size);
     ak_mpzn_add_montgomery(d, d, e, ec->p, ec->size);
     ak_mpzn_lshift_montgomery(d,d,ec->p, ec->size); //b=2(2*Z^2...)
-
     ak_mpzn_mul_montgomery(f, b, d, ec->p, ec->n, ec->size);
-
     ak_mpzn_mul_montgomery(g, a, d, ec->p, ec->n, ec->size);
-
     ak_mpzn_sub(e,ec->p,b,ec->size);
     ak_mpzn_add_montgomery(e, a, e, ec->p, ec->size);
     ak_mpzn_mul_montgomery(e, e, c, ec->p, ec->n, ec->size);
-
     ak_mpzn_sub(a,ec->p,g,ec->size);
     ak_mpzn_add_montgomery(a, e, a, ec->p, ec->size);
-
     ak_mpzn_add_montgomery(b, e, f, ec->p, ec->size);
-
     ak_mpzn_add_montgomery(c, g, e, ec->p, ec->size);
     ak_mpzn_mul_montgomery(ep->X, ep->X, c, ec->p, ec->n, ec->size);
     ak_mpzn_mul_montgomery(ep->X, ep->X, a, ec->p, ec->n, ec->size);
-
     ak_mpzn_sub(c,ec->p,e,ec->size);
     ak_mpzn_add_montgomery(c, c, f, ec->p, ec->size);
     ak_mpzn_mul_montgomery(ep->Y, ep->Y, c, ec->p, ec->n, ec->size);
     ak_mpzn_mul_montgomery(ep->Y, ep->Y, b, ec->p, ec->n, ec->size);
-
     ak_mpzn_mul_montgomery(ep->Z, ep->Z, a, ec->p, ec->n, ec->size);
     ak_mpzn_mul_montgomery(ep->Z, ep->Z, b, ec->p, ec->n, ec->size);
-
-
 }
 void ak_epoint_quintuple(ak_epoint ep, ak_ecurve ec){
     ak_mpznmax x5,y5,z5,t1,t2,t5,t_;
@@ -217,7 +204,6 @@ void ak_epoint_quintuple(ak_epoint ep, ak_ecurve ec){
     ak_mpzn_add_montgomery(y5, y5, x5, ec->p, ec->size);
     ak_mpzn_mul_montgomery(y5, x5, y5, ec->p, ec->n, ec->size);
     ak_mpzn_add_montgomery(x5, y5, z5, ec->p, ec->size);
-
     ak_mpzn_sub(t2,ec->p,z5,ec->size);
     ak_mpzn_add_montgomery(t2, y5, t2, ec->p, ec->size);
     ak_mpzn_mul_montgomery(x5, x5, t2, ec->p, ec->n, ec->size);
@@ -236,7 +222,6 @@ void ak_epoint_quintuple(ak_epoint ep, ak_ecurve ec){
     ak_mpzn_add_montgomery(x5, x5, t_, ec->p, ec->size);
     ak_mpzn_mul_montgomery(x5, t2, x5, ec->p, ec->n, ec->size);
     ak_mpzn_mul_montgomery(ep->X, ep->X, x5, ec->p, ec->n, ec->size);
-
     ak_mpzn_add_montgomery(z5, y5, t1, ec->p, ec->size);
     ak_mpzn_sub(t_,ec->p,t1,ec->size);
     ak_mpzn_add_montgomery(y5, y5, t_, ec->p, ec->size);

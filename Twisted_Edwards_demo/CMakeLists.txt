@@ -23,8 +23,7 @@ find_package(Twisted_Edwards_tests 0.0.0 REQUIRED)
 target_link_libraries(${PROJECT_NAME} Twisted_Edwards::tests)
 
 find_library(LIBAKR libakrypt-static.a
-    PATHS
-    /home/user/Projects/Twisted_Edwards/libakrypt-0.x/
-    )
+    PATHS /home/user/Projects/Twisted_Edwards/libakrypt-0.x/
+)
 target_include_directories(${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../libakrypt-0.x/source/>)
 target_link_libraries(${PROJECT_NAME} ${LIBAKR})

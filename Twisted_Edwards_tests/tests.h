@@ -1,5 +1,5 @@
 #pragma once
-#define LIBAKRYPT_HAVE_SYSTYPES_H
+
 void test_add();
 
 void test_double();
@@ -8,10 +8,21 @@ void test_triple();
 
 void test_quintuple();
 
-void test_pow();
+void test_pow_montgomery();
 
 void test_form_changing();
 
-int ak_signkey_test_edwards();
+void ak_signkey_test_edwards();
 
-int my_ak_signkey_test();
+void test_pow_bin();
+
+void test_pow_NAF();
+
+void test_pow_NAF_2_w();
+
+void test_pow_NAF_l_w();
+
+void test_pow_NAF_mbw();
+
+void get_time();
+

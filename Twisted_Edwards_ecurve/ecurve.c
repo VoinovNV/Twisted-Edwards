@@ -1,6 +1,8 @@
 #include "ecurve.h"
-#include <string.h>  
-
+#include <string.h>
+#include <math.h>
+#include <unistd.h>
+#include <time.h>
 void ak_epoint_set_epoint(ak_epoint ep1, ak_epoint ep2, ak_ecurve ec)
 {
 	memcpy(ep1->X, ep2->X, ec->size * sizeof(ak_uint64));
@@ -40,7 +42,7 @@ bool_t ak_epoint_is_ok(ak_epoint ep, ak_ecurve ec) {
 	ak_mpzn_mul_montgomery(d, a, ec->e, ec->p, ec->n, ec->size);
 	ak_mpzn_mul_montgomery(b, ep->Y, ep->Y, ec->p, ec->n, ec->size);
 	ak_mpzn_add_montgomery(d, d, b, ec->p, ec->size);
-	ak_mpzn_mul_montgomery(c, ep->Z, ep->Z, ec->p, ec->n, ec->size);
+    ak_mpzn_mul_montgomery(c, ep->Z, ep->Z, ec->p, ec->n, ec->size);
 	ak_mpzn_mul_montgomery(d, d, c, ec->p, ec->n, ec->size);
 	ak_mpzn_mul_montgomery(c, c, c, ec->p, ec->n, ec->size);
 	ak_mpzn_mul_montgomery(a, a, b, ec->p, ec->n, ec->size);
@@ -181,7 +183,7 @@ void ak_epoint_triple(ak_epoint ep, ak_ecurve ec){
     ak_mpzn_mul_montgomery(ep->Z, ep->Z, b, ec->p, ec->n, ec->size);
 }
 void ak_epoint_quintuple(ak_epoint ep, ak_ecurve ec){
-    ak_mpznmax x5,y5,z5,t1,t2,t5,t_;
+    ak_mpznmax x5,y5,z5,t1,t2,t_;
     /*
     ak_mpzn_mul_montgomery(a, ep->Y, ep->Y, ec->p, ec->n, ec->size);
     ak_mpzn_lshift_montgomery(d,d,ec->p, ec->size);
@@ -229,4 +231,340 @@ void ak_epoint_quintuple(ak_epoint ep, ak_ecurve ec){
     ak_mpzn_mul_montgomery(ep->Y, y5, ep->Y, ec->p, ec->n, ec->size);
     ak_mpzn_mul_montgomery(z5, t2, z5, ec->p, ec->n, ec->size);
     ak_mpzn_mul_montgomery(ep->Z, ep->Z, z5, ec->p, ec->n, ec->size);
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void ak_epoint_pow_binary( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size,
+                          ak_ecurve ec )
+{
+    ak_uint64 uk = 0;
+    long long int i, j;
+    struct epoint Q, R;
+    ak_epoint_set_as_unit(&Q, ec);
+    ak_epoint_set_epoint( &R, wp, ec );
+    for( i = size-1; i >= 0; i-- ) {
+        uk = k[i];
+        for (j = 0; j < 64; j++) {
+            ak_epoint_double( &Q, ec );
+            if (uk & 0x8000000000000000LL) ak_epoint_add( &Q, &R, ec );
+            uk <<= 1;
+        }
+    }
+    ak_epoint_set_epoint( wq, &Q, ec );
+}
+ak_uint32 ak_mpzn_rem_uint32( ak_uint64 *x, const size_t size, ak_uint32 p )
+{
+    size_t i;
+    ak_uint64 t, r1, r = 1, sum = x[0]%p;
+
+    if( !p ) return ak_error_message( ak_error_invalid_value, __func__, "divide by zero" );
+
+    /* вычисляем r[i] = 2^{64i} mod (p) */
+    r1 = 9223372036854775808ull % p; r1 = ( 2*r1 )%p;
+
+    /* вычисляем остаток от деления */
+    for( i = 1; i < size; i++ ) {
+        r *= r1; r %= p;
+        t = x[i]%p; t *= r; t %= p; sum += t;
+    }
+    /* приведение после суммирования дает корректный результат только для небольших значений size
+     в произвольном случае здесь возникнет ошибка переполнения */
+    return sum%p;
+}
+
+ak_int32 ak_mods(ak_uint64* n,ak_uint32 l,ak_uint32 w,ak_ecurve ec){
+    /*ak_int32 a=(pow(l,w));
+    if (n%a>=a/l) return n%a-a;
+    return n%a;*/
+//n mods l^w = (n mod l^w) - l^w , n mod l^w >=l^(w-1)
+// else: n mods l^w = n mod l^w
+    ak_uint32 a=(pow(l,w-1));
+    ak_uint32 p=a*l;
+    ak_uint32 res=ak_mpzn_rem_uint32(n, ec->size, p); //result = n mod l^w
+    if(res>=a) return res-p;
+    return res;
+}
+void ak_mpzn_div2(ak_uint64* n, size_t size){
+    for(unsigned i=0; i<size-1; i++){
+        n[i]>>=1;
+        if(n[i+1]&1) n[i]|=0x8000000000000000LL;
+    }
+    n[size-1]>>=1;
+}
+ak_int32 ak_n_to_NAF2(ak_uint64 *k, ak_int32* res, size_t size){
+    /*
+     * Atomicity Improvement for Elliptic Curve Scalar Multiplication
+     */
+    ak_int32 i=0;
+    ak_mpznmax E,one=ak_mpznmax_one;
+    ak_mpzn_set(E,k,size);
+    while (!ak_mpzn_cmp_ui(E,size,0)){
+        if(E[0]&1) {
+            res[i]=2-(E[0]&3);
+            if (res[i]==1) E[0]-=1;
+            else (ak_mpzn_add(E,E,one, size));
+        }
+        else res[i]=0;
+        ak_mpzn_div2(E,size);
+        i++;
+    }
+    return i;
+}
+void ak_invert_ep(ak_epoint resp,ak_epoint ep, ak_ecurve ec){
+    ak_mpzn_sub(resp->X,ec->p,ep->X,ec->size);
+    memcpy(resp->Y, ep->Y, ec->size * sizeof(ak_uint64));
+    memcpy(resp->Z, ep->Z, ec->size * sizeof(ak_uint64));
+}
+void ak_epoint_pow_NAF( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size,
+                       ak_ecurve ec)
+{
+    ak_int32 kNAF[512];
+    ak_int32 i=ak_n_to_NAF2(k,kNAF,ec->size);
+    struct epoint Q, R,R_;
+    ak_epoint_set_as_unit( &Q, ec );
+    ak_epoint_set_epoint( &R, wp, ec );
+    ak_epoint_set_epoint( &R_, wp, ec );
+    ak_invert_ep(&R_,&R,ec);
+    for (i=i-1; i>=0; i--) {
+        ak_epoint_double(&Q,ec);
+        ak_int32 nj=kNAF[i];
+        if (nj>0) {
+            ak_epoint_add(&Q,&R,ec);
+        }
+        else if(nj<0){
+            ak_epoint_add(&Q,&R_,ec);
+        }
+    }
+    ak_epoint_set_epoint( wq, &Q, ec );
+}
+
+ak_int32 ak_n_to_NAF_powof2(ak_uint64 *k,ak_int32 w, ak_int32* res, size_t size){
+    ak_int32 i=0,mods=pow(2,w);
+    ak_mpznmax E,one=ak_mpznmax_one;
+    ak_mpzn_set(E,k,size);
+    while (!ak_mpzn_cmp_ui(E,size,0)){
+        if(E[0]&1){
+            res[i]=(E[0]&(mods-1));
+            if(res[i]>=(mods)>>1) res[i]-=(mods);
+            if (res[i]>0){
+                ak_mpzn_set_ui(one,size,res[i]);
+                ak_mpzn_sub(E,E,one, size);
+            }
+            else{
+                ak_mpzn_set_ui(one,size,-res[i]);
+                ak_mpzn_add(E,E,one, size);
+            }
+        }
+        else res[i]=0;
+        ak_mpzn_div2(E,size);
+        i++;
+    }
+    return i;
+}
+void ak_epoint_pow_NAF_powof2( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size,ak_uint32 w,
+                       ak_ecurve ec)
+{/*
+Fixed-Base Comb with Window-Non-Adjacent Form (NAF)
+Method for Scalar Multiplication
+*/
+    ak_mpznmax pows;
+    ak_int32 kNAF[512];
+    ak_int32 i=ak_n_to_NAF_powof2(k,w,kNAF,ec->size);
+    struct epoint Q, R_[32],inv;
+    ak_epoint_set_as_unit(&Q, ec );
+    ak_epoint_set_epoint(R_, wp, ec );
+    ak_epoint_set_epoint(R_+1, wp, ec );
+    ak_epoint_set_epoint(R_+2, wp, ec );
+    ak_epoint_triple(R_+1, ec);
+    if(w>3){
+    ak_epoint_quintuple(R_+2, ec);
+    for (ak_uint32 j=3;j<w;j++){
+        ak_mpzn_set_ui(pows,size,j*2+1);
+        ak_epoint_pow_binary(R_+j,R_,pows,size,ec);
+    }
+    }
+    for (i=i-1; i>=0; i--) {
+        ak_epoint_double(&Q,ec);
+        ak_int32 nj=kNAF[i];
+        if (nj>0) {
+            ak_epoint_add(&Q,R_+((nj-1)>>1),ec);
+        }
+        else if(nj<0){
+            ak_invert_ep(&inv,R_+((-nj-1)>>1),ec);
+            ak_epoint_add(&Q,&inv,ec);
+        }
+    }
+    ak_epoint_set_epoint( wq, &Q, ec );
+}
+
+
+ak_int32 ak_n_to_NAF_L_w(ak_uint64 *k, ak_int32* res, ak_int32 L, ak_int32 w, size_t size,ak_ecurve ec){
+    ak_int32 i=0,L_w1=pow(L,w-1);
+    ak_int32 L_w=L_w1*L;
+    ak_mpznmax E,one,L_inv=ak_mpznmax_zero,u=ak_mpznmax_one,z;
+//Находим l^(-1)
+    ak_mpzn_set_ui(z, ec->size, 2);
+    ak_mpzn_sub(z, ec->p, z, ec->size);
+    ak_mpzn_set_ui(L_inv,size,L);
+    ak_mpzn_mul_montgomery(L_inv,L_inv,ec->r2,ec->p,ec->n,ec->size);
+    ak_mpzn_modpow_montgomery(L_inv, L_inv, z, ec->p, ec->n, ec->size);
+
+    ak_mpzn_set(E,k,size);
+
+
+    while (ak_mpzn_cmp(E,u,size)>=0){
+        if(ak_mpzn_rem_uint32(E,size,L)!=0){
+            res[i]=(ak_mpzn_rem_uint32(E,size,L_w));
+            if(res[i]>=L_w1) res[i]-=(L_w);
+            if (res[i]>0){
+                ak_mpzn_set_ui(one,size,res[i]);
+                //if(!ak_mpzn_cmp(E,one,size)) break;
+                ak_mpzn_sub(E,E,one, size);
+            }
+            else{
+                ak_mpzn_set_ui(one,size,-res[i]);
+                ak_mpzn_add(E,E,one, size);
+            }
+        }
+        else res[i]=0;
+        ak_mpzn_mul_montgomery(E,E,ec->r2,ec->p,ec->n,ec->size);
+        ak_mpzn_mul_montgomery(E,E,L_inv,ec->p,ec->n,ec->size);
+        ak_mpzn_mul_montgomery(E,E,u,ec->p,ec->n,ec->size);
+        i++;
+    }
+    return i;
+}
+void ak_epoint_pow_NAF_powofL( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size, ak_uint32 l,ak_uint32 w,
+                              ak_ecurve ec){
+    ak_mpznmax pows;
+    ak_int32 kNAF[512],LL_=pow(l,w-1);
+    ak_int32 len=LL_*(l-1);
+
+    ak_int32 i=ak_n_to_NAF_L_w(k,kNAF,l,w,size,ec);
+    struct epoint Q, R_[512],inv;
+    ak_epoint_set_as_unit(&Q, ec );
+    ak_epoint_set_epoint(R_, wp, ec );
+    ak_int32 cr=1;
+    for (ak_int32 j=2;j<len;j++){
+        if(j%l){ ak_mpzn_set_ui(pows,size,j);
+            ak_epoint_pow_binary(R_+cr,R_,pows,size,ec);
+            cr++;
+        }
+    }
+
+    for (i=i-1; i>=0; i--) {
+        if(l==2) ak_epoint_double(&Q,ec);
+        else{
+            if(l==3) ak_epoint_triple(&Q,ec);
+            else if(l==5) ak_epoint_quintuple(&Q,ec);
+                else{
+                    ak_mpzn_set_ui(pows,size,l);
+                    ak_epoint_pow_binary(&Q,&Q,pows,size,ec);
+                }
+        }
+
+        ak_int32 nj=kNAF[i];
+        if (nj>0) {
+            ak_epoint_add(&Q,R_+(nj-1-(nj/l)),ec);
+        }
+        else if(nj<0){
+            ak_invert_ep(&inv,R_+((-nj)-1-(-nj)/l),ec);
+            ak_epoint_add(&Q,&inv,ec);
+        }
+    }
+
+    ak_epoint_set_epoint( wq, &Q, ec );
+}
+
+ak_int32 ak_n_to_Ext_wmb_NAF(ak_uint64 *k, ak_int32* res, ak_int32* bases,
+                        ak_uint32* a, ak_uint32* w, ak_int8 len,size_t size,ak_ecurve ec){
+
+    ak_int32 i=0;
+    ak_int32 A=1;
+    ak_mpznmax E,one,L_inv[10],u=ak_mpznmax_one,z;
+    for(int j=0;j<len;j++) A*=pow(a[j],w[j]);
+
+    ak_mpzn_set_ui(z, ec->size, 2);
+    ak_mpzn_sub(z, ec->p, z, ec->size);
+    for(int j=0;j<len;j++){
+        ak_mpzn_set_ui(L_inv[j],size,a[j]);
+        ak_mpzn_mul_montgomery(L_inv[j],L_inv[j],ec->r2,ec->p,ec->n,ec->size);
+        ak_mpzn_modpow_montgomery(L_inv[j], L_inv[j], z, ec->p, ec->n, ec->size);
+    }
+
+    ak_mpzn_set(E,k,size);
+
+
+    while (ak_mpzn_cmp(E,u,size)>=0){
+        int j=0;
+        for(;j<len;j++){
+            if(ak_mpzn_rem_uint32(E,size,a[j])==0) {res[i]=0; break;}
+        }
+        if(j==len) {
+            res[i]=ak_mpzn_rem_uint32(E,size,A);
+            if(res[i]>=A/2) res[i]-=A;
+            if (res[i]>0){
+                ak_mpzn_set_ui(one,size,res[i]);
+                ak_mpzn_sub(E,E,one, size);
+            }
+            else{
+                ak_mpzn_set_ui(one,size,-res[i]);
+                ak_mpzn_add(E,E,one, size);
+            }
+        }
+
+        for(j=0;j<len;j++){
+            if(ak_mpzn_rem_uint32(E,size,a[j])==0){
+                ak_mpzn_mul_montgomery(E,E,ec->r2,ec->p,ec->n,ec->size);
+                ak_mpzn_mul_montgomery(E,E,L_inv[j],ec->p,ec->n,ec->size);
+                ak_mpzn_mul_montgomery(E,E,u,ec->p,ec->n,ec->size);
+                bases[i]=a[j];
+                break;
+            }
+        }
+        i++;
+    }
+
+    return i;
+}
+void ak_epoint_pow_NAF_mbw( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size, ak_uint32* l,ak_uint32* w, ak_uint8 len,
+                                   ak_ecurve ec){
+    ak_mpznmax pows;
+    ak_int32 kNAF[512],bases[512];
+    ak_int32 A=1;
+    for(int j=0;j<len;j++) A*=pow(l[j],w[j]);
+    ak_int32 i=ak_n_to_Ext_wmb_NAF(k,kNAF,bases,l,w,len,size,ec);
+    struct epoint Q, R_[13500],inv;
+    ak_epoint_set_as_unit(&Q, ec );
+    ak_epoint_set_epoint(R_, wp, ec );
+    for (ak_int32 j=2;j<A/2;j++){
+        ak_mpzn_set_ui(pows,size,j);
+        ak_epoint_pow_binary(R_+j-1,R_,pows,size,ec);
+    }
+
+    for (i=i-1; i>=0; i--) {
+
+        switch (bases[i]) {
+        case 2:
+            ak_epoint_double(&Q,ec); break;
+        case 3:
+            ak_epoint_triple(&Q,ec); break;
+        case 5:
+            ak_epoint_quintuple(&Q,ec); break;
+        default:
+            ak_mpzn_set_ui(pows,size,bases[i]);
+            ak_epoint_pow_binary(&Q,&Q,pows,size,ec);
+            break;
+        }
+
+        ak_int32 nj=kNAF[i];
+        if (nj>0) {
+            ak_epoint_add(&Q,R_+(nj-1),ec);
+        }
+        else if(nj<0){
+            ak_invert_ep(&inv,R_+(-nj-1),ec);
+            ak_epoint_add(&Q,&inv,ec);
+        }
+    }
+
+    ak_epoint_set_epoint( wq, &Q, ec );
 }

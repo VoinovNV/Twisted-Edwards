@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <ak_mpzn.h>
 #include <ak_curves.h>
-
 typedef struct ecurve* ak_ecurve;
 typedef struct epoint* ak_epoint;
 
@@ -61,6 +60,27 @@ void ak_wpoint_to_epoint(ak_wpoint, ak_wcurve, ak_epoint, ak_ecurve);
 void ak_epoint_triple(ak_epoint , ak_ecurve );
 
 void ak_epoint_quintuple(ak_epoint , ak_ecurve );
+
+void ak_epoint_pow_binary( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size,
+                          ak_ecurve ec );
+void ak_epoint_pow_NAF( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size,
+                       ak_ecurve ec);
+void ak_epoint_pow_NAF_powof2( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size,ak_uint32 w,
+                              ak_ecurve ec);
+void ak_epoint_pow_NAF_powofL( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size, ak_uint32 l,ak_uint32 w,
+                              ak_ecurve ec);
+void ak_epoint_pow_NAF_mbw( ak_epoint wq, ak_epoint wp, ak_uint64 *k, size_t size, ak_uint32* l,ak_uint32* w, ak_uint8 len,
+                           ak_ecurve ec);
+
+
+ak_int32 ak_n_to_Ext_wmb_NAF(ak_uint64 *k, ak_int32* res, ak_int32* bases,
+                             ak_uint32* a, ak_uint32* w, ak_int8 len,size_t size,ak_ecurve ec);
+
+ak_int32 ak_n_to_NAF_L_w(ak_uint64 *k, ak_int32* res, ak_int32 L, ak_int32 w, size_t size,ak_ecurve ec);
+
+ak_int32 ak_n_to_NAF_powof2(ak_uint64 *k,ak_int32 w, ak_int32* res, size_t size);
+void ak_invert_ep(ak_epoint resp,ak_epoint ep, ak_ecurve ec);
+ak_int32 ak_n_to_NAF2(ak_uint64 *k, ak_int32* res, size_t size);
 
 /* ????????? ?????????? ?????? ???????? */
 const static struct ecurve gost_3410_2012_512_paramSetC = {
